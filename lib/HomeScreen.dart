@@ -61,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           Padding(
                             padding: const EdgeInsets.all(10),
                             child: Text(
-                              'Please Choose Category',
+                              'Please Choo se Category',
                               style: TextStyle(
                                   color: Colors.amber,
                                   fontSize: 30,
