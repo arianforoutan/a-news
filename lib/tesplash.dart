@@ -17,7 +17,6 @@ class TeSplash extends StatefulWidget {
 class _TeSplashState extends State<TeSplash> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     getData();
   }
