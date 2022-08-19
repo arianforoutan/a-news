@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 
-import 'model/news.dart';
+import '../model/news.dart';
 
-class AutomobilePage extends StatefulWidget {
-  AutomobilePage({Key? key, this.news}) : super(key: key);
+class SportsPage extends StatefulWidget {
+  SportsPage({Key? key, this.news}) : super(key: key);
   List<News>? news;
   @override
-  State<AutomobilePage> createState() => _AutomobilePageState();
+  State<SportsPage> createState() => _SportsPageState();
 }
 
-class _AutomobilePageState extends State<AutomobilePage> {
+class _SportsPageState extends State<SportsPage> {
   List<News>? news;
 
   @override

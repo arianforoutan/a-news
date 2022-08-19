@@ -1,19 +1,20 @@
+import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:sciencenewsinshort/screen/automobile.dart';
+import 'package:sciencenewsinshort/screen/science.dart';
 
-import 'package:sciencenewsinshort/sports.dart';
+import '../model/news.dart';
 
-import 'model/news.dart';
-
-class SpSplash extends StatefulWidget {
-  SpSplash({Key? key}) : super(key: key);
+class AuSplash extends StatefulWidget {
+  AuSplash({Key? key}) : super(key: key);
 
   @override
-  State<SpSplash> createState() => _SpSplashState();
+  State<AuSplash> createState() => _AuSplashState();
 }
 
-class _SpSplashState extends State<SpSplash> {
+class _AuSplashState extends State<AuSplash> {
   @override
   void initState() {
     // TODO: implement initState
@@ -49,7 +50,7 @@ class _SpSplashState extends State<SpSplash> {
 
   void getData() async {
     var response =
-        await Dio().get('https://inshorts.deta.dev/news?category=sport');
+        await Dio().get('https://inshorts.deta.dev/news?category=automobile');
 
     List<News> newslist = response.data['data']
         .map<News>((jsonMapObject) => News.fromMapJson(jsonMapObject))
@@ -58,7 +59,7 @@ class _SpSplashState extends State<SpSplash> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (BuildContext context) => SportsPage(
+        builder: (BuildContext context) => AutomobilePage(
           news: newslist,
         ),
       ),

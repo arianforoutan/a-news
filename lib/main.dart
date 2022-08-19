@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sciencenewsinshort/HomeScreen.dart';
-import 'package:sciencenewsinshort/science.dart';
+import 'package:sciencenewsinshort/screen/science.dart';
 
 void main() {
   runApp(Application());

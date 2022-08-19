@@ -3,9 +3,9 @@ import 'package:dio/dio.dart';
 
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
-import 'package:sciencenewsinshort/technology.dart';
+import 'package:sciencenewsinshort/screen/technology.dart';
 
-import 'model/news.dart';
+import '../model/news.dart';
 
 class TeSplash extends StatefulWidget {
   TeSplash({Key? key}) : super(key: key);

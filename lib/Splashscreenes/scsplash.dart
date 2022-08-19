@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:sciencenewsinshort/science.dart';
+import 'package:sciencenewsinshort/screen/science.dart';
 
-import 'model/news.dart';
+import '../model/news.dart';
 
 class ScSplash extends StatefulWidget {
   ScSplash({Key? key}) : super(key: key);

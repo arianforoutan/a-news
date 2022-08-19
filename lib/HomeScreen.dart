@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'package:sciencenewsinshort/ausplash.dart';
+import 'package:sciencenewsinshort/Splashscreenes/ausplash.dart';
 
-import 'package:sciencenewsinshort/scsplash.dart';
+import 'package:sciencenewsinshort/Splashscreenes/scsplash.dart';
 
-import 'package:sciencenewsinshort/spsplash.dart';
+import 'package:sciencenewsinshort/Splashscreenes/spsplash.dart';
 
-import 'package:sciencenewsinshort/tesplash.dart';
+import 'package:sciencenewsinshort/Splashscreenes/tesplash.dart';
 
 import 'model/news.dart';
 
