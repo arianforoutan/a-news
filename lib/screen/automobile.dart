@@ -70,7 +70,10 @@ class _AutomobilePageState extends State<AutomobilePage> {
                               height: 200,
                               width: 300,
                               child: Image(
-                                image: NetworkImage(news![index].imageUrl),
+                                image: NetworkImage(
+                                  news![index].imageUrl,
+                                ),
+                                fit: BoxFit.cover,
                               ),
                             ),
                           ),
